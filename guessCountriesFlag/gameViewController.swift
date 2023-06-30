@@ -81,7 +81,6 @@ class gameViewController: UIViewController {
         }
         else {
             alertMessageFunc(gTitle: "False Answer", gMessage: "Think Carefully")
-            Thread.sleep(forTimeInterval: 0.25)
             answer = randomQuestion(gArray: allOfCountries)
             countryName.text = answer
             answer = answer.lowercased()
